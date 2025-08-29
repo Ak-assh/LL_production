@@ -1,0 +1,60 @@
+/* Tailwind directives removed. Make sure to include Tailwind's output CSS if needed. */
+
+:root { --radius: 14px; }
+
+html, body, #root {
+  height: 100%;
+  background: #0b1220;           /* app bg */
+  color: #e5e7eb;                /* text */
+}
+
+/* Card + Buttons */
+.card {
+  border-radius: 1rem; /* rounded-2xl */
+  background-color: var(--bg-surface, #1e293b); /* bg-bg-surface fallback */
+  border: 1px solid var(--border, #334155); /* border-border fallback */
+  box-shadow: 0 2px 8px 0 rgba(15, 23, 42, 0.08); /* shadow-soft */
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.btn-primary {
+  background-color: var(--brand, #3b82f6);
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: var(--brand-700, #2563eb);
+}
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--border, #334155);
+}
+.btn-secondary:hover {
+  background-color: var(--bg-subtle, #f1f5f9);
+}
+.btn-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Table */
+.table-head {
+  text-align: left;
+  color: #9ca3af; /* Tailwind's text-text-muted or use your custom variable */
+  font-size: 0.875rem; /* Tailwind's text-sm */
+}
+.table-cell {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
